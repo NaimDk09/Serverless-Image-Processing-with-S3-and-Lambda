@@ -1,5 +1,24 @@
 # Serverless Image Processing with S3 and Lambda
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [1. Architecture Overview](#1-architecture-overview)
+  - [1.1 Amazon S3 (Simple Storage Service)](#11-amazon-s3-simple-storage-service)
+  - [1.2 AWS Lambda](#12-aws-lambda)
+  - [1.3 IAM Role (Identity and Access Management)](#13-iam-role-identity-and-access-management)
+  - [1.4 Amazon CloudWatch](#14-amazon-cloudwatch)
+- [2. Workflow of the Solution](#2-workflow-of-the-solution)
+  - [Step 1: User Uploads an Image](#step-1-user-uploads-an-image)
+  - [Step 2: S3 Event Triggers Lambda](#step-2-s3-event-triggers-lambda)
+  - [Step 3: Lambda Processes the Image](#step-3-lambda-processes-the-image)
+  - [Step 4: Processed Image Storage](#step-4-processed-image-storage)
+  - [Step 5: Logging and Monitoring](#step-5-logging-and-monitoring)
+- [3. Advantages of the Serverless Architecture](#3-advantages-of-the-serverless-architecture)
+- [4. Future Improvements and Extensions](#4-future-improvements-and-extensions)
+
+---
+
 ## Introduction
 
 The solution proposed is a serverless image processing pipeline built using Amazon Web Services (AWS). The main objective is to automate the resizing and watermarking of images uploaded by users, without managing any infrastructure manually. This solution is particularly useful in contexts like media platforms, e-commerce, or content management systems where image handling is frequent and needs to be scalable.
