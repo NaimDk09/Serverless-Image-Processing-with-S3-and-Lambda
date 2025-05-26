@@ -27,7 +27,7 @@ The solution proposed is a serverless image processing pipeline built using Amaz
 
 ## 1. Architecture Overview
 
-![Architecture Diagram](Serverless Image Processing with S3 and Lambda.drawio.png)
+![Architecture Diagram](./Serverless%20Image%20Processing%20with%20S3%20and%20Lambda.drawio.png)
 
 
 The architecture relies on several AWS services working in coordination to handle image uploads, trigger processing, store outputs, and log system activity. The key components are:
